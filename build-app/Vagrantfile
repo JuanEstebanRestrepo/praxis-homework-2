@@ -22,4 +22,8 @@ Vagrant.configure("2") do |config|
   # This runs the script you need to modify. 
   config.vm.provision :shell, path: "bootstrap.sh"
 
+  config.vm.provision :shell, path: "backend.sh"
+
+  config.vm.provision :shell, path: "frontend.sh"
+
 end
